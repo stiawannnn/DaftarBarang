@@ -9,10 +9,17 @@ android:padding="16dp"
 
 <!-- Toolbar dengan ikon back -->
 <LinearLayout
+    android:id="@+id/appbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:paddingVertical="16dp">
+    android:orientation="horizontal"
+    android:background="#21CC1B"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
 
     <ImageView
         android:id="@+id/btnBack"
@@ -20,7 +27,7 @@ android:padding="16dp"
         android:layout_height="32dp"
         android:foreground="?attr/selectableItemBackground"
         android:src="@drawable/back_icon"
-        app:tint="#A569BD"
+        app:tint="#FFFFFF"
         android:layout_gravity="center_vertical"/>
 
     <TextView
@@ -30,22 +37,24 @@ android:padding="16dp"
         android:text="Tambah Kategori"
         android:layout_marginLeft="10dp"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_gravity="center_vertical"/>
 </LinearLayout>
 
 <!-- EditText Item Name -->
-<EditText
-    android:id="@+id/edtNamaKategori"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Nama Kategori*"
-    android:inputType="text"
-    android:background="@drawable/edittext_background"
-    android:padding="12dp"
-    android:textSize="16sp"/>
 
-<TextView
+    <EditText
+        android:id="@+id/edtNamaKategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Nama Kategori*"
+        android:inputType="text"
+        android:padding="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="* wajib diisi"

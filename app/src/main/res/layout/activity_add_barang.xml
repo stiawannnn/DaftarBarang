@@ -9,11 +9,17 @@ android:padding="16dp"
 
 <!-- Toolbar dengan ikon back -->
 <LinearLayout
+    android:id="@+id/appbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
     android:orientation="horizontal"
-    android:paddingVertical="16dp">
+    android:background="#21CC1B"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
 
     <ImageView
         android:id="@+id/btnBack"
@@ -21,7 +27,7 @@ android:padding="16dp"
         android:layout_height="32dp"
         android:src="@drawable/back_icon"
         android:foreground="?attr/selectableItemBackground"
-        app:tint="#A569BD"
+        app:tint="#FFFFFF"
         android:layout_gravity="center_vertical"/>
 
     <TextView
@@ -31,7 +37,7 @@ android:padding="16dp"
         android:text="Tambah Barang"
         android:textSize="20sp"
         android:layout_marginStart="10dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_gravity="center_vertical"/>
 </LinearLayout>
 
