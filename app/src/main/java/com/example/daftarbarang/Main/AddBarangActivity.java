@@ -1,4 +1,4 @@
-package com.example.daftarbarang.activity;
+package com.example.daftarbarang.Main;
 
 import android.os.Bundle;
 import android.text.Editable;

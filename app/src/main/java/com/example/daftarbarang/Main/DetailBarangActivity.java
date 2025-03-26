@@ -1,4 +1,4 @@
-package com.example.daftarbarang.activity;
+package com.example.daftarbarang.Main;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -44,12 +44,7 @@ public class DetailBarangActivity extends AppCompatActivity {
 
         loadBarangData();
 
-        findViewById(R.id.btnJual).setOnClickListener(v -> {
-            if (currentBarang != null && currentBarang.getJumlah() >= 1) {
-                currentBarang.kurangiJumlah();
-                barangViewModel.update(currentBarang);
-            }
-        });
+
 
         findViewById(R.id.btnHapus).setOnClickListener(v -> {
             new AlertDialog.Builder(this)

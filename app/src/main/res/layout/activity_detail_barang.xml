@@ -152,17 +152,6 @@ android:padding="16dp"
     </LinearLayout>
 </androidx.cardview.widget.CardView>
 
-<Button
-    android:id="@+id/btnJual"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:background="@drawable/btn_jual"
-    android:layout_marginHorizontal="8dp"
-    android:foreground="?attr/selectableItemBackground"
-    android:text="Jual"
-    android:textColor="@android:color/white"
-    app:cornerRadius="10dp" />
 
 <Button
     android:id="@+id/btnHapus"

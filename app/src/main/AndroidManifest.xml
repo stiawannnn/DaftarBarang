@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AppCompat.Light">
 
         <!-- Halaman utama aplikasi -->
-        <activity android:name=".activity.MainActivity"
+        <activity android:name=".Main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.AddBarangActivity" />
-        <activity android:name=".activity.BarangActivity" />
-        <activity android:name=".activity.AddKategoriActivity" />
-        <activity android:name=".activity.DetailBarangActivity" />
+        <activity android:name=".Main.AddBarangActivity" />
+        <activity android:name=".Main.BarangActivity" />
+        <activity android:name=".Main.AddKategoriActivity" />
+        <activity android:name=".Main.DetailBarangActivity" />
 
     </application>
 

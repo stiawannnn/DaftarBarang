@@ -39,9 +39,7 @@ public class Barang {
     public int getHarga() { return hargaBarang; }
     public int getJumlah() { return jumlahBarang; }
     public int getKategori() { return kategoriId; }
-    public void kurangiJumlah() {
-        if (jumlahBarang > 0) {
-            jumlahBarang--;
-        }
+
     }
-}
+
+
